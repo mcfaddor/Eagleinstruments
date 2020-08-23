@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+
+
+.card-container {
+    margin-bottom: 200px;
+
+    .img {
+        padding-bottom: 20px;
+        place-content: left;
+        width: 300px;
+    }
+
+    .screenwrap {
+        display: flex;
+        width: 50%;
+        margin-bottom: 40px;
+
+        .screencard {
+            width: 100%;
+            display: flex;
+
+            .img {
+                text-align: center;
+                width: 100%;
+                padding-bottom: 20px;
+            }
+
+            .info {
+                width: 500px;
+                margin: 10px auto;
+                background-color: white !important;
+                border: none !important;
+            }
+        }
+    }
+}
+
+.v-card__text {
+    margin: 10px 0px 90px 0px;
+}
+
+.card-text {
+    display: flex;
+    background-color: white;
+
+    h3 {
+        font-family: "Indie Flower", cursive;
+        color: grey;
+        border-bottom: 2px solid yellow;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        font-size: 30px;
+        width: 400px;
+    }
+
+    h2 {
+        font-family: "Indie Flower", cursive;
+        color: grey;
+        border-bottom: 2px solid yellow;
+        padding-top: 15px;
+        margin-bottom: 10px;
+        font-size: 40px;
+        height: 70px;
+        width: 400px;
+    }
+
+    p.rubrik {
+        margin-right: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p.svar {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px)  // MOBILE
+{
+
+
+    .mobilewrap {
+        margin: 25px 20px;
+    }
+
+        .v-toolbar__content {
+            height: 150px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .screen {
+            display: none;
+        }
+
+        .mobile-img {
+            display: flex;
+            text-align: center;
+
+            img {
+                width: 100%;
+
+                h3 {
+                    font-family: "Indie Flower", cursive;
+                    color: grey;
+                    border-bottom: 2px solid yellow;
+                    width: 100%;
+                }
+            }
+        }
+    
+}
+
+@media only screen and (min-width: 768px) // IPAD AND UP
+ {
+    .mobile {
+        display: none;
+
+        .card-text h2 {
+            width: 450px;
+        }
+    }
+}
